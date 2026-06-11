@@ -31,7 +31,7 @@ jobs:
           echo "Policy Subject: ${{ steps.gosec-step.outputs.policy-subject }}"
       - name: Run policy check
         id: policy-check
-        uses: cloudbees-io/policy-check@v1.0.1
+        uses: cloudbees-io/policy-check@v1
         with:
           policy: a47beca2-0f50-4ad9-aa04-12ecf3e39937
           input-data: ${{ steps.gosec-step.outputs.policy-subject }}
