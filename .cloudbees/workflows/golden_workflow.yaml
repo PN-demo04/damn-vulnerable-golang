@@ -33,5 +33,5 @@ jobs:
         id: policy-check
         uses: cloudbees-io/policy-check@v1.0.1
         with:
-          policy: d91f6f1a-d6bb-424e-b991-6e4dd7ebd7a2
+          policy: a47beca2-0f50-4ad9-aa04-12ecf3e39937
           input-data: ${{ steps.gosec-step.outputs.policy-subject }}
