@@ -2,11 +2,10 @@ name: golden_workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 on:
-  push:
-    branches:
-      - Pavi2912-patch-1
-      - main
   workflow_dispatch:
+  pull_request:
+    branches:
+      - "**"
 permissions:
   scm-token-own: read
   scm-token-org: read
