@@ -4,6 +4,7 @@ kind: workflow
 on:
   pull_request:
     branches:
+      - Pavi2912-patch-1
       - main
 permissions:
   scm-token-own: read
