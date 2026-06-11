@@ -6,6 +6,7 @@ on:
     branches:
       - Pavi2912-patch-1
       - main
+  workflow_dispatch:
 permissions:
   scm-token-own: read
   scm-token-org: read
